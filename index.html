@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kovendhan V — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Kovendhan</div>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <!-- Replace or remove this img easily:
+             To replace: put your image at images/hero.jpg
+             To remove: delete the <img> tag below -->
+        <img id="hero-img" src="images/anime-placeholder.jpg" alt="Kovendhan portrait" />
+      </div>
+
+      <div class="hero-right">
+        <h1>Hi, It's <span class="accent">Kovendhan V</span></h1>
+        <h2 class="tagline">I'm an Aspiring Software Developer</h2>
+
+        <p class="hero-desc">
+          I'm a 2nd-year B.E. Computer Science & Engineering student at Easwari Engineering College.
+          I work on frontend web projects, IoT prototypes and DSA problems. I build clean, responsive
+          interfaces and practical small systems to learn and demonstrate my skills.
+        </p>
+
+        <div class="socials">
+          <a href="https://github.com/kovendhan12" target="_blank" aria-label="GitHub">GH</a>
+          <a href="https://linkedin.com/in/kovendhan-v-832751328" target="_blank" aria-label="LinkedIn">IN</a>
+          <a href="https://leetcode.com/u/kovendhan12" target="_blank" aria-label="LeetCode">LC</a>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn-outline" href="#contact">Hire me</a>
+          <!-- Replace resume link with your resume hosted on GitHub or drive -->
+          <a class="btn-solid" href="#" download="Kovendhan_Resume.pdf">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Frontend Development</h3>
+          <p>Responsive UI using HTML, CSS, JavaScript. Creating accessible and performant web pages.</p>
+        </article>
+
+        <article class="card">
+          <h3>Java Programming</h3>
+          <p>Core Java projects, OOP design, data handling and small backend logic implementation.</p>
+        </article>
+
+        <article class="card">
+          <h3>DSA & Problem Solving</h3>
+          <p>Practicing algorithms and data structures (LeetCode / Competitive approach) to build efficient solutions.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Java</div>
+        <div class="skill">C</div>
+        <div class="skill">Python</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Arduino / IoT</div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="edu-card">
+        <h3>B.E. Computer Science & Engineering</h3>
+        <p>Easwari Engineering College, Chennai — 2024–2028</p>
+        <p>Currently in 2nd Year (3rd Semester)</p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="exp-card">
+        <h3>Internship-ready Student / Project Developer</h3>
+        <p>
+          No formal industry experience yet. Actively building projects (web + IoT) and practicing software
+          engineering fundamentals. Seeking internship opportunities to apply my skills in real-world settings,
+          contribute to team projects, and learn professional development workflows.
+        </p>
+
+        <h4>Selected Projects</h4>
+        <ul>
+          <li><strong>Automatic Fire Detection System (GSM Alerting)</strong> — Arduino Nano, Flame Sensor, SIM800L; sends SMS/Call alerts on detection.</li>
+          <li><strong>Public Feedback Logger</strong> — Small web app that collects and displays user feedback in structured format.</li>
+          <li><strong>Syntax Checker</strong> — Lightweight tool to detect common input-pattern errors.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <p><strong>Email:</strong> <a href="mailto:kovendhan64@gmail.com">kovendhan64@gmail.com</a></p>
+          <p><strong>Location:</strong> Chennai, Tamil Nadu</p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/kovendhan12" target="_blank">github.com/kovendhan12</a></p>
+        </div>
+
+        <form class="contact-form" action="mailto:kovendhan64@gmail.com" method="post" enctype="text/plain">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@email.com" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Write a short message" required></textarea>
+          </label>
+          <button type="submit" class="btn-solid">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Kovendhan V — Aspiring Software Developer</p>
+  </footer>
+</body>
+</html>
